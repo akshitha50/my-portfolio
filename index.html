@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>My Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+            text-align: center;
+        }
+        /* HEADER */
+        
+        header {
+            padding: 60px 20px;
+        }
+        
+        header h1 {
+            font-size: 3rem;
+        }
+        
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+        
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 4px solid white;
+        }
+        /* SECTIONS */
+        
+        section {
+            padding: 40px 20px;
+        }
+        
+        h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        /* SKILLS */
+        
+        .skills {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .skill-circle {
+            position: relative;
+            width: 120px;
+            height: 120px;
+        }
+        
+        .skill-circle svg {
+            width: 120px;
+            height: 120px;
+            transform: rotate(-90deg);
+        }
+        
+        .skill-circle circle {
+            fill: none;
+            stroke-width: 10;
+            stroke-linecap: round;
+        }
+        
+        .skill-circle circle:first-child {
+            stroke: rgba(255, 255, 255, 0.2);
+        }
+        
+        .skill-circle circle:last-child {
+            stroke: #4facfe;
+            stroke-dasharray: 314;
+            stroke-dashoffset: 314;
+            transition: 1.5s;
+        }
+        
+        .skill-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: bold;
+        }
+        /* PROJECTS */
+        
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .project-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+        
+        .project-card:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+        /* CONTACT */
+        
+        .contact {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 20px;
+            border-radius: 10px;
+            padding: 30px;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            margin: 8px;
+            font-size: 18px;
+            padding: 10px;
+            border-radius: 50%;
+            color: white;
+            transition: 0.3s;
+        }
+        
+        .linkedin {
+            background: #0077b5;
+        }
+        
+        .github {
+            background: #000;
+        }
+        
+        .whatsapp {
+            background: #25D366;
+        }
+        
+        .instagram {
+            background: radial-gradient(circle at 20% 20%, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        
+        footer {
+            padding: 20px;
+            font-size: 0.9rem;
+            background: rgba(0, 0, 0, 0.2);
+            margin-top: 20px;
+        }
+        
+        @media(max-width:600px) {
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <!-- Put your image in same folder and change name -->
+        <img src="C:\Users\AKSHITHA\Downloads\WhatsApp Image 2026-02-17 at 4.36.58 PM.jpeg" alt=My Photo class="profile-img ">
+        <h1>Hello, I'm Akshitha O</h1>
+        <p>Web Developer</p>
+    </header>
+    <section class="about ">
+        <h2>About Me</h2>
+        <p>
+            Hi! I'm Akshitha O, a passionate web developer who loves creating interactive and responsive websites. I specialize in HTML, CSS, JavaScript, React, and Python.
+        </p>
+    </section>
+
+    <section class="skills ">
+        <h2>My Skills</h2>
+        <div class="skills-container ">
+
+            <!-- HTML -->
+            <div class="skill-circle " data-percent="100 ">
+                <svg>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+            </svg>
+                <div class="skill-text ">HTML</div>
+            </div>
+
+            <!-- CSS -->
+            <div class="skill-circle " data-percent="85 ">
+                <svg>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+            </svg>
+                <div class="skill-text ">CSS</div>
+            </div>
+
+            <!-- JS -->
+            <div class="skill-circle " data-percent="85 ">
+                <svg>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+            </svg>
+                <div class="skill-text ">JS</div>
+            </div>
+
+            <!-- Python -->
+            <div class="skill-circle " data-percent="80 ">
+                <svg>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+                <circle cx="60 " cy="60 " r="50 "></circle>
+            </svg>
+                <div class="skill-text ">Python</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <h2>My Projects</h2>
+        <div class="projects-container ">
+
+            <div class="project-card ">
+                <h3>Online Learning Platform</h3>
+                <p>Web-based platform for students to register, enroll, watch lessons and track progress.</p>
+            </div>
+
+            <div class="project-card ">
+                <h3>Hospital Appointment Booking System</h3>
+                <p>Patients can register, book appointments, select time slots and manage visits online.</p>
+            </div>
+            <div class="project-card ">
+                <h3>Interactive pro online shopping website with dynamic product display feature</h3>
+                <p> A dynamic and fully responsive e-commerce web application that displays products in real-time, with features like search, filtering, and an interactive shopping cart. Built using HTML, CSS, JavaScript, and backend integration to deliver
+                    a seamless online shopping experience .
+                </p>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="contact ">
+        <h2>Contact Me</h2>
+        <p>Email: akshithaakshitha9921@gmail.com</p>
+        <p>Phone: 7760419921</p>
+
+        <div class="social-icons ">
+            <a href="https://www.linkedin.com/ " target="_blank " class="linkedin "><i class="fab fa-linkedin "></i></a>
+            <a href="https://github.com/ " target="_blank " class="github "><i class="fab fa-github "></i></a>
+            <a href="https://wa.me/7760419921 " target="_blank " class="whatsapp "><i class="fab fa-whatsapp "></i></a>
+            <a href="https://instagram.com/ " target="_blank " class="instagram "><i class="fab fa-instagram "></i></a>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 Akshitha O | All Rights Reserved
+    </footer>
+
+    <script>
+        document.querySelectorAll('.skill-circle').forEach(skill => {
+            const circle = skill.querySelectorAll('circle')[1];
+            const percent = skill.getAttribute('data-percent');
+            const radius = circle.r.baseVal.value;
+            const circumference = 2 * Math.PI * radius;
+
+            circle.style.strokeDasharray = circumference;
+            circle.style.strokeDashoffset = circumference;
+
+            const offset = circumference - (percent / 100) * circumference;
+            setTimeout(() => {
+                circle.style.strokeDashoffset = offset;
+            }, 300);
+        });
+    </script>
+
+</body>
+
+</html>
